@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gemunu Libre', sans-serif;
+}
+main {
+  width: 100vw;
+  height: 100vw;
+  background: linear-gradient(149deg, #830000 0%, #002f6c 80%);
+}
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: royalblue;
+}
+.grid {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+.drums {
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 2;
+}
+.bass {
+  grid-column: 6 / span 2;
+  grid-row: 2 / span 2;
+}
+.piano {
+  grid-column: 9 / span 2;
+  grid-row: 2 / span 2;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 3%;
+}
+.instrument {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.instrument-text {
+  color: white;
+}
+.checkbox-con {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.unmute {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+}
+.unmute:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+.unmute:checked {
+  background: linear-gradient(150deg, #00ffb9 0%, #ff5d76 80%);
+}
+.slider-con {
+  display: flex;
+  justify-content: center;
+}
+.slider {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 75%;
+  height: 5px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: rgb(248, 47, 255);
+  width: 10px;
+  height: 10px;
+  border: solid 1px white;
+  border-radius: 50%;
+}
+.slider::-webkit-slider-thumb:hover {
+  cursor: pointer;
+}
